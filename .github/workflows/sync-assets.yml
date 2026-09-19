@@ -1,0 +1,40 @@
+name: Sync MAKHMUTOV assets
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/sync-assets.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download production assets
+        run: |
+          set -euo pipefail
+          mkdir -p assets
+          base="https://makhmutov.site/assets"
+          curl -fL --retry 3 "$base/portrait.webp" -o assets/portrait.webp
+          curl -fL --retry 3 "$base/ostatochny-shum.webp" -o assets/ostatochny-shum.webp
+          curl -fL --retry 3 "$base/dead-client-girls.webp" -o assets/dead-client-girls.webp
+          curl -fL --retry 3 "$base/ai-art-photo.webp" -o assets/ai-art-photo.webp
+          curl -fL --retry 3 "$base/ai-art-sound.webp" -o assets/ai-art-sound.webp
+          curl -fL --retry 3 "$base/og-preview.jpg" -o assets/og-preview.jpg
+
+      - name: Commit assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets
+          if git diff --cached --quiet; then
+            echo "No asset changes"
+            exit 0
+          fi
+          git commit -m "Sync production assets"
+          git push
