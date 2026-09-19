@@ -2,27 +2,215 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>MAKHMUTOV — GitHub Pages test</title>
-  <meta name="robots" content="noindex,nofollow">
-  <style>
-    :root{color-scheme:dark}
-    *{box-sizing:border-box}
-    body{margin:0;min-height:100vh;display:grid;place-items:center;background:#090b0b;color:#e7e5df;font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}
-    main{width:min(760px,calc(100% - 40px));padding:56px 0;border-top:1px solid #303332;border-bottom:1px solid #303332}
-    .eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#9b9d98}
-    h1{font:500 clamp(42px,9vw,92px)/.95 Georgia,serif;margin:18px 0 24px;letter-spacing:-.04em}
-    p{max-width:580px;color:#b8bab5;margin:0 0 12px}
-    .ok{margin-top:32px;display:inline-block;border:1px solid #555;padding:10px 14px;letter-spacing:.08em;text-transform:uppercase;font-size:12px}
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MAKHMUTOV — авторский проект Тимура Махмутова</title>
+  <meta name="description" content="MAKHMUTOV — авторский проект Тимура Махмутова: музыка, литература, игры, визуальные истории и исследования о творчестве и технологиях.">
+  <meta name="author" content="Тимур Махмутов">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="theme-color" content="#090b0b">
+  <link rel="canonical" href="https://makhmutov.site/">
+
+  <meta property="og:title" content="MAKHMUTOV — идеи не знают жанров">
+  <meta property="og:description" content="Музыка, литература, игры, визуальные истории и эксперименты с формой.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="MAKHMUTOV">
+  <meta property="og:url" content="https://makhmutov.site/">
+  <meta property="og:image" content="https://makhmutov.site/assets/og-preview.jpg">
+  <meta property="og:image:alt" content="MAKHMUTOV — авторский проект Тимура Махмутова">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MAKHMUTOV — идеи не знают жанров">
+  <meta name="twitter:description" content="Музыка, литература, игры, визуальные истории и эксперименты с формой.">
+  <meta name="twitter:image" content="https://makhmutov.site/assets/og-preview.jpg">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" as="image" href="assets/portrait.webp" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://makhmutov.site/#website",
+        "name": "MAKHMUTOV",
+        "url": "https://makhmutov.site/",
+        "description": "Авторский проект Тимура Махмутова: музыка, литература, игры, визуальные истории и исследования о творчестве и технологиях.",
+        "inLanguage": "ru",
+        "creator": {
+          "@id": "https://makhmutov.site/#timur-makhmutov"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://makhmutov.site/#timur-makhmutov",
+        "name": "Тимур Махмутов",
+        "alternateName": "MAKHMUTOV",
+        "url": "https://makhmutov.site/",
+        "image": "https://makhmutov.site/assets/portrait.webp",
+        "description": "Автор проекта MAKHMUTOV, работающего с музыкой, литературой, играми, визуальными историями и исследовательскими текстами."
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-  <main>
-    <div class="eyebrow">MAKHMUTOV · connectivity test</div>
-    <h1>GitHub Pages<br>проверка</h1>
-    <p>Если эта страница открылась без VPN из РФ, GitHub Pages подходит как кандидат на бесплатный хостинг.</p>
-    <p>Основной сайт makhmutov.site при этой проверке не меняется.</p>
-    <span class="ok">test page loaded</span>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="page-grid" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="wordmark" href="#top" aria-label="MAKHMUTOV — на главную">MAKHMUTOV</a>
+    <button class="menu-toggle" aria-controls="nav" aria-expanded="false">Меню</button>
+    <nav id="nav" class="nav" aria-label="Основная навигация">
+      <a href="#works">Проекты</a>
+      <a href="#about">О проекте</a>
+      <a href="https://t.me/aikillart" target="_blank" rel="noopener noreferrer">Канал</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero shell">
+      <div class="hero-copy">
+        <p class="kicker">Создавать · исследовать · задавать вопросы</p>
+        <h1>Идеи<br>не знают<br>жанров</h1>
+        <div class="hero-identity" aria-label="Об авторе проекта">
+          Авторский проект Тимура Махмутова из Нефтекамска
+        </div>
+        <p class="hero-sub">Музыка, литература, игры, визуальные истории и эксперименты с формой</p>
+        <a class="btn" href="#works">Смотреть проекты <span aria-hidden="true">→</span></a>
+      </div>
+
+      <figure class="hero-image">
+        <img src="assets/portrait.webp" alt="Тимур Махмутов" width="1254" height="1254" fetchpriority="high">
+      </figure>
+
+      <aside class="hero-aside" aria-label="Направления проекта">
+        <span>МУЗЫКА</span>
+        <span>ЛИТЕРАТУРА</span>
+        <span>ИГРЫ</span>
+        <span>ВИЗУАЛЬНЫЕ ИСТОРИИ</span>
+        <span>ИССЛЕДОВАНИЯ</span>
+      </aside>
+    </section>
+
+    <section id="works" class="works shell">
+      <div class="section-head">
+        <div>
+          <p class="kicker">Актуальное</p>
+          <h2>Главные проекты</h2>
+        </div>
+        <p class="section-note">Разные формы<br>Один авторский проект</p>
+      </div>
+
+      <div class="featured-grid">
+        <article class="feature-card feature-music">
+          <div class="feature-index">01</div>
+          <div class="feature-media square-media">
+            <img src="assets/ostatochny-shum.webp" alt="Обложка EP «Остаточный шум»" loading="lazy">
+          </div>
+          <div class="feature-body">
+            <p class="project-type">Музыка · Debut EP</p>
+            <h3>Остаточный шум</h3>
+            <p>Шесть песен о том, что остаётся после расставания: попытках вернуть прошлое, заглушить его и всё-таки продолжить идти</p>
+            <a class="btn" href="https://band.link/HZnOn" target="_blank" rel="noopener noreferrer" aria-label="Сохранить EP «Остаточный шум» заранее">Сохранить релиз <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="feature-card feature-book">
+          <div class="feature-index">02</div>
+          <div class="feature-media book-media">
+            <img src="assets/dead-client-girls.webp" alt="Обложка романа «Девушки моего мёртвого клиента»" loading="lazy">
+          </div>
+          <div class="feature-body">
+            <p class="project-type">Книги · Роман</p>
+            <h3>Девушки моего мёртвого клиента</h3>
+            <p>Проводник посмертных воспоминаний передаёт трём женщинам память мужчины, который их любил, и в чужих историях всё отчётливее узнаёт собственную вину</p>
+            <span class="btn btn-muted" aria-disabled="true">Скоро в продаже</span>
+          </div>
+        </article>
+
+        <article id="channel" class="feature-card feature-channel">
+          <div class="feature-index">03</div>
+          <div class="channel-visual" aria-label="Визуалы статей канала «ИИ убивает искусство?»">
+            <img class="channel-img channel-img-back" src="assets/ai-art-photo.webp" alt="Обложка статьи «Фотография и раннее кино»" loading="lazy">
+            <img class="channel-img channel-img-front" src="assets/ai-art-sound.webp" alt="Обложка статьи «Записанный звук»" loading="lazy">
+          </div>
+          <div class="feature-body">
+            <p class="project-type">Канал · Статьи</p>
+            <h3>ИИ убивает искусство?</h3>
+            <p>Канал о том, как искусственный интеллект меняет творчество, авторство и культуру</p>
+            <a class="btn" href="https://t.me/aikillart" target="_blank" rel="noopener noreferrer">Перейти в канал <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="future-grid" aria-label="Будущие направления">
+        <article class="future-card">
+          <span class="future-no">04</span>
+          <div><h3>Игры</h3><p>COMING SOON</p></div>
+        </article>
+        <article class="future-card">
+          <span class="future-no">05</span>
+          <div><h3>Манга</h3><p>COMING SOON</p></div>
+        </article>
+        <article class="future-card">
+          <span class="future-no">06</span>
+          <div><h3>Видео</h3><p>COMING SOON</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about shell">
+      <div class="about-title">
+        <p class="kicker">О проекте</p>
+        <h2>Больше чем одна история</h2>
+      </div>
+      <div class="about-copy">
+        <p class="about-lead">MAKHMUTOV — проект, в котором разные идеи находят свою форму: музыку, книги, игры, визуальные истории и исследовательские тексты</p>
+        <p>Часть работ создаётся в формате <strong>AI-assisted</strong>. Искусственный интеллект используется как инструмент производства: для генерации и перебора вариантов, работы со звуком, изображением и другими материалами</p>
+        <p>Замысел, тексты, драматургия, отбор, редактура и финальные решения остаются за автором</p>
+      </div>
+    </section>
+
+    <section id="contacts" class="contacts shell">
+      <div class="contacts-title">
+        <p class="kicker">Связь</p>
+        <h2>Написать напрямую</h2>
+      </div>
+      <div class="contact-links" aria-label="Способы связи">
+        <a class="contact-icon" href="https://t.me/Mkh_tz" target="_blank" rel="noopener noreferrer" aria-label="Написать в Telegram" data-label="Telegram">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21.6 3.3 18.4 19c-.2 1.1-.9 1.4-1.8.9l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.4-.1-.6-.6-.2L6 12.8l-4.8-1.5c-1-.3-1.1-1 .2-1.5L20 2.6c.9-.3 1.8.2 1.6.7Z"/>
+          </svg>
+          <span class="sr-only">Telegram</span>
+        </a>
+        <a class="contact-icon" href="mailto:timamakhmutovz@gmail.com" aria-label="Написать по электронной почте" data-label="Email">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3.5 5h17A2.5 2.5 0 0 1 23 7.5v9A2.5 2.5 0 0 1 20.5 19h-17A2.5 2.5 0 0 1 1 16.5v-9A2.5 2.5 0 0 1 3.5 5Zm8.5 7.3 8.2-5.5H3.8l8.2 5.5Zm0 2.1L3 8.4v8.1c0 .3.2.5.5.5h17c.3 0 .5-.2.5-.5V8.4l-9 6Z"/>
+          </svg>
+          <span class="sr-only">Email</span>
+        </a>
+      </div>
+    </section>
   </main>
+
+  <footer class="footer shell">
+    <div>
+      <div class="wordmark footer-mark">MAKHMUTOV</div>
+      <p>Музыка · книги · игры · манга · канал · видео</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://t.me/aikillart" target="_blank" rel="noopener noreferrer">Канал</a>
+      <a href="https://t.me/Mkh_tz" target="_blank" rel="noopener noreferrer">Telegram</a>
+      <a href="mailto:timamakhmutovz@gmail.com">Email</a>
+    </div>
+    <div class="copyright">© 2026 MAKHMUTOV</div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
