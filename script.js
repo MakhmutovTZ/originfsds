@@ -1,3 +1,25 @@
+// Yandex Metrica — counter 112875408
+(function (m, e, t, r, i, k, a) {
+  m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments); };
+  m[i].l = 1 * new Date();
+  for (let j = 0; j < document.scripts.length; j += 1) {
+    if (document.scripts[j].src === r) return;
+  }
+  k = e.createElement(t);
+  a = e.getElementsByTagName(t)[0];
+  k.async = true;
+  k.src = r;
+  a.parentNode.insertBefore(k, a);
+})(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js?id=112875408', 'ym');
+
+ym(112875408, 'init', {
+  ssr: true,
+  webvisor: true,
+  clickmap: true,
+  accurateTrackBounce: true,
+  trackLinks: true
+});
+
 const toggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.nav');
 
