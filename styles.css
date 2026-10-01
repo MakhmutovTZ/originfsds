@@ -213,7 +213,7 @@ a{color:inherit}
 }
 .music-category-card:hover .music-cover:first-child{transform:translate(-5px,-5px) rotate(-3deg);filter:brightness(.9)}
 .music-category-card:hover .music-cover:nth-child(2){transform:translate(5px,-6px) rotate(2.8deg)}
-.music-category-card .feature-card-cta{margin-top:auto;align-self:flex-start}
+.music-category-card .feature-card-cta{margin-top:0;align-self:flex-start}
 .detail-release-art>img{width:min(100%,720px);height:auto;aspect-ratio:1/1;object-fit:cover;border:1px solid var(--line)}
 @media(max-width:520px){
   .music-cover{width:68%}
