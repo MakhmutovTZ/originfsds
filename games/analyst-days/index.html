@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>«Дни аналитика» — браузерная игра Тимура Махмутова</title>
+  <meta name="description" content="«Дни аналитика» — браузерная головоломка о работе бизнес-аналитика. Решайте рабочие задачи и собирайте схемы бизнес-процессов.">
+  <meta name="author" content="Тимур Махмутов">
+  <meta name="theme-color" content="#090b0b">
+  <link rel="canonical" href="https://makhmutov.site/games/analyst-days/">
+
+  <meta property="og:title" content="«Дни аналитика» — MAKHMUTOV">
+  <meta property="og:description" content="Разбирайте рабочие ситуации и собирайте схемы бизнес-процессов в браузере.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="MAKHMUTOV">
+  <meta property="og:url" content="https://makhmutov.site/games/analyst-days/">
+  <meta property="og:image" content="https://makhmutov.site/games/analyst-days/screenshot-editor.webp">
+  <meta property="og:image:alt" content="Редактор схем в игре «Дни аналитика»">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="page-grid" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="wordmark" href="/" aria-label="MAKHMUTOV — на главную">MAKHMUTOV</a>
+    <button class="menu-toggle" aria-controls="nav" aria-expanded="false">Меню</button>
+    <nav id="nav" class="nav" aria-label="Основная навигация">
+      <a href="/#works">Проекты</a>
+      <a href="/timur-makhmutov/">Автор</a>
+      <a href="/#contacts">Контакты</a>
+    </nav>
+  </header>
+
+  <main>
+    <nav class="breadcrumb shell" aria-label="Путь к странице">
+      <a href="/">Главная</a> / <a href="/#works">Проекты</a> / <span aria-current="page">Дни аналитика</span>
+    </nav>
+
+    <section class="detail-hero analyst-hero shell" aria-labelledby="game-title">
+      <div class="detail-hero-copy">
+        <p class="kicker">Браузерная головоломка</p>
+        <h1 id="game-title">Дни аналитика</h1>
+        <p class="hero-sub">Разбирайте рабочие ситуации и собирайте схемы бизнес-процессов. Найдите порядок действий, при котором процесс работает по условиям задачи.</p>
+        <div class="detail-actions">
+          <a class="btn analyst-play" href="./play/">Играть в браузере <span aria-hidden="true">→</span></a>
+        </div>
+        <p class="analyst-save-note">Версия 0.26. Регистрация не нужна. Прогресс сохраняется в этом браузере на этом устройстве.</p>
+      </div>
+
+      <figure class="analyst-shot">
+        <a href="./screenshot-editor.webp" aria-label="Открыть скриншот редактора в полном размере">
+          <img src="./screenshot-editor.webp" alt="Схема ремонта техники и отчёт о проверке решения" width="1440" height="810" fetchpriority="high">
+        </a>
+        <figcaption>Дело «Мастер на два стола»</figcaption>
+      </figure>
+    </section>
+
+    <section class="detail-body shell" aria-labelledby="how-to-play">
+      <div class="detail-grid">
+        <h2 class="analyst-section-title" id="how-to-play">Как играть</h2>
+        <div class="detail-copy">
+          <p class="lead">Прочитайте условия дела, разместите шаги на рабочем поле и соедините их в схему.</p>
+          <p>Начните с обучения, чтобы освоить редактор. Запустите расчёт и посмотрите в отчёте, сколько заказов выполнено и где возникли задержки. В особых поручениях одну схему нужно проверить сразу на нескольких сценариях.</p>
+          <figure class="analyst-shot analyst-case-shot">
+            <a href="./screenshot-campaign.webp" aria-label="Открыть скриншот испытания в полном размере">
+              <img src="./screenshot-campaign.webp" alt="Схема испытания с тремя сценариями и общим отчётом о приёмке" width="1440" height="810" loading="lazy">
+            </a>
+            <figcaption>Особое поручение «После шторма»</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer shell">
+    <div><a class="wordmark footer-mark" href="/">MAKHMUTOV</a><p>Тимур Махмутов · игры</p></div>
+    <div class="footer-links"><a href="/">Главная</a><a href="/timur-makhmutov/">Автор</a><a href="/#works">Проекты</a></div>
+    <div class="copyright">© 2026 MAKHMUTOV</div>
+  </footer>
+  <script src="/script.js"></script>
+</body>
+</html>

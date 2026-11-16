@@ -220,3 +220,18 @@ a{color:inherit}
   .music-cover figcaption{font-size:7px;letter-spacing:.1em;padding:5px 6px}
 }
 @media(prefers-reduced-motion:reduce){.music-cover,.channel-img{transition:none}}
+
+.future-card-live {
+  text-decoration: none;
+  transition: border-color .2s ease;
+}
+.future-card-live:hover, .future-card-live:focus-visible {
+  border-color: var(--accent);
+}
+.future-card-live p {
+  color: #b6b8b3;
+}
+
+.future-card-live::after {
+  content: none;
+}
