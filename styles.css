@@ -235,3 +235,28 @@ a{color:inherit}
 .future-card-live::after {
   content: none;
 }
+
+/* Analyst Days: a released game in the main project collection. */
+.feature-game{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.25fr);background:#101714;border-color:#3a4840;margin-top:4px}
+.feature-game .feature-index{color:#9cae9f;right:auto;left:24px;top:22px}
+.game-card-copy{padding:58px clamp(24px,3.2vw,50px) 38px;display:flex;flex-direction:column;align-items:flex-start}
+.game-card-copy .project-type{font-size:9px;letter-spacing:.18em;color:#a9c2b0;display:flex;gap:9px;align-items:center}
+.game-live-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:#aac7a4;box-shadow:0 0 0 4px #abcaa410;flex:none}
+.game-card-copy h3{font:400 clamp(35px,3.3vw,54px)/1.05 var(--display-serif);margin:22px 0 18px;color:#ede7da}
+.game-card-hook{font:400 clamp(23px,2vw,30px)/1.23 var(--serif);color:#c9d2c5;margin:0 0 16px}
+.game-card-description{font-size:14px;color:#b0bcb1;max-width:40ch;line-height:1.65;margin:0 0 22px}
+.game-card-facts{display:flex;gap:18px;flex-wrap:wrap;font-size:10px;color:#bbc9b9;letter-spacing:.07em;margin-bottom:24px}
+.game-card-facts span+span{border-left:1px solid #455245;padding-left:18px}
+.game-card-actions{display:flex;align-items:center;gap:24px;margin-top:auto;flex-wrap:wrap}
+.game-card-actions .btn{margin:0;min-width:168px}.game-card-actions .text-link{margin:0;font-size:10px}
+.game-card-primary{background:#dce3d2;color:#193b32;border-color:#dce3d2}.game-card-primary:hover{background:#eaf0e2;border-color:#eaf0e2}
+.game-card-art{display:flex;flex-direction:column;justify-content:center;gap:18px;background:#d8ddca;color:#335449;padding:28px clamp(20px,3vw,42px);text-decoration:none;overflow:hidden;border-left:1px solid #4a5a4d;background-image:radial-gradient(#375b3a22 .8px,transparent .8px);background-size:12px 12px}
+.game-card-art-head,.game-card-art-foot{display:flex;justify-content:space-between;gap:14px;font-size:9px;text-transform:uppercase;letter-spacing:.12em;line-height:1.5}
+.game-card-art-head{border-bottom:1px solid #8b9d85;padding-bottom:14px}.game-card-art-foot{border-top:1px solid #8b9d85;padding-top:14px}
+.game-card-screen{border:1px solid #879b83;box-shadow:0 15px 30px #28433120;transform:rotate(-2deg);transition:transform .3s}
+.game-card-screen img{width:100%;height:auto}.game-card-art:hover .game-card-screen{transform:rotate(0)}
+.future-grid-pair{grid-template-columns:repeat(2,minmax(0,1fr))}.future-grid-pair .future-card{min-height:135px}
+.feature-game a:focus-visible{outline:3px solid #ceab70;outline-offset:5px}
+@media(max-width:1000px){.feature-game{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.game-card-copy{padding:55px 24px 30px}.game-card-art{padding:28px 20px}.game-card-art-head,.game-card-art-foot{font-size:8px;letter-spacing:.05em}}
+@media(max-width:700px){.feature-game{display:flex;flex-direction:column}.game-card-copy{padding:50px 24px 28px}.game-card-copy h3{font-size:42px}.game-card-art{border-left:0;border-top:1px solid #6b826c;padding:24px}.game-card-art-head,.game-card-art-foot{font-size:9px}.future-grid-pair{grid-template-columns:1fr 1fr}.future-grid-pair .future-card{padding:18px;min-height:130px}.future-grid-pair .future-card h3{font-size:25px}.future-grid-pair .future-card p{font-size:8px;letter-spacing:.12em}}
+@media(prefers-reduced-motion:reduce){.game-card-screen{transition:none}}

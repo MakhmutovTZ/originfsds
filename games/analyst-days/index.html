@@ -3,86 +3,111 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>«Дни аналитика» — браузерная игра Тимура Махмутова</title>
-  <meta name="description" content="«Дни аналитика» — браузерная головоломка о работе бизнес-аналитика. Решайте рабочие задачи и собирайте схемы бизнес-процессов.">
+  <title>Дни аналитика — соберите процесс, который работает | MAKHMUTOV</title>
+  <meta name="description" content="Бесплатная браузерная головоломка о рабочих процессах. 45 дел, 5 особых поручений и обучение с нуля. Собирайте схемы, управляйте очередями и проверяйте свои решения.">
   <meta name="author" content="Тимур Махмутов">
-  <meta name="theme-color" content="#090b0b">
+  <meta name="theme-color" content="#101714">
   <link rel="canonical" href="https://makhmutov.site/games/analyst-days/">
-
-  <meta property="og:title" content="«Дни аналитика» — MAKHMUTOV">
-  <meta property="og:description" content="Разбирайте рабочие ситуации и собирайте схемы бизнес-процессов в браузере.">
+  <meta property="og:title" content="Дни аналитика — у каждой очереди есть причина">
+  <meta property="og:description" content="Соберите процесс, который работает. 45 дел, 5 особых поручений. Бесплатно, в браузере, без регистрации.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ru_RU">
   <meta property="og:site_name" content="MAKHMUTOV">
   <meta property="og:url" content="https://makhmutov.site/games/analyst-days/">
   <meta property="og:image" content="https://makhmutov.site/games/analyst-days/screenshot-editor.webp">
-  <meta property="og:image:alt" content="Редактор схем в игре «Дни аналитика»">
+  <meta property="og:image:alt" content="Редактор процессов в игре «Дни аналитика»">
   <meta name="twitter:card" content="summary_large_image">
-
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/styles.css">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="/styles.css?v=20261117">
+  <link rel="stylesheet" href="./style.css?v=20261117">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoGame","name":"Дни аналитика","url":"https://makhmutov.site/games/analyst-days/","description":"Браузерная головоломка о рабочих процессах: 45 дел, 5 особых поручений и обучение.","genre":["Головоломка","Симулятор процессов"],"gamePlatform":"Web browser","playMode":"SinglePlayer","isAccessibleForFree":true,"author":{"@type":"Person","name":"Тимур Махмутов"},"image":"https://makhmutov.site/games/analyst-days/screenshot-editor.webp"}</script>
 </head>
-<body>
+<body class="analyst-page">
+  <a class="skip-link" href="#main">К содержанию</a>
   <div class="grain" aria-hidden="true"></div>
-  <div class="page-grid" aria-hidden="true"></div>
-
   <header class="topbar">
     <a class="wordmark" href="/" aria-label="MAKHMUTOV — на главную">MAKHMUTOV</a>
     <button class="menu-toggle" aria-controls="nav" aria-expanded="false">Меню</button>
     <nav id="nav" class="nav" aria-label="Основная навигация">
-      <a href="/#works">Проекты</a>
-      <a href="/timur-makhmutov/">Автор</a>
-      <a href="/#contacts">Контакты</a>
+      <a href="/#works">Все проекты</a>
+      <a href="#how-it-works">Как играть</a>
+      <a href="#questions">Вопросы</a>
+      <a class="nav-play" href="./play/">Начать игру <span aria-hidden="true">→</span></a>
     </nav>
   </header>
-
-  <main>
-    <nav class="breadcrumb shell" aria-label="Путь к странице">
-      <a href="/">Главная</a> / <a href="/#works">Проекты</a> / <span aria-current="page">Дни аналитика</span>
-    </nav>
-
-    <section class="detail-hero analyst-hero shell" aria-labelledby="game-title">
-      <div class="detail-hero-copy">
-        <p class="kicker">Браузерная головоломка</p>
-        <h1 id="game-title">Дни аналитика</h1>
-        <p class="hero-sub">Разбирайте рабочие ситуации и собирайте схемы бизнес-процессов. Найдите порядок действий, при котором процесс работает по условиям задачи.</p>
-        <div class="detail-actions">
-          <a class="btn analyst-play" href="./play/">Играть в браузере <span aria-hidden="true">→</span></a>
+  <main id="main">
+    <section class="game-hero shell" aria-labelledby="game-title">
+      <div class="game-hero-top"><a href="/#works">← Проекты</a><span>Игра Тимура Махмутова / 0.26</span></div>
+      <div class="game-hero-grid">
+        <div class="game-hero-copy">
+          <p class="game-eyebrow"><span class="game-live-dot" aria-hidden="true"></span>Браузерная головоломка</p>
+          <h1 id="game-title">Дни<br><em>аналитика</em><span class="title-period">.</span></h1>
+          <p class="game-promise">Соберите процесс,<br>который работает.</p>
+          <p class="game-intro">Заказы ждут, мастер один, срок уже обещан. Расставьте операции, соедините их в схему и выясните, где работа теряет время.</p>
+          <div class="game-actions"><a class="game-button" href="./play/"><span aria-hidden="true">▷</span> Играть бесплатно <span aria-hidden="true">→</span></a><a class="game-text-link" href="#how-it-works">Как это устроено <span aria-hidden="true">↓</span></a></div>
+          <p class="game-platform-note">Без установки и регистрации · Для компьютера</p>
         </div>
-        <p class="analyst-save-note">Версия 0.26. Регистрация не нужна. Прогресс сохраняется в этом браузере на этом устройстве.</p>
+        <figure class="hero-dossier">
+          <div class="dossier-top"><span>Бюро рабочих процессов</span><span class="dossier-stamp">В работе</span></div>
+          <div class="dossier-heading"><span>Сервисный центр</span><h2>Два стола.<br>Один мастер.</h2></div>
+          <a class="game-image-link hero-screen" href="./screenshot-editor.webp" data-lightbox aria-label="Увеличить скриншот дела «Мастер на два стола»"><img src="./screenshot-editor.webp" alt="Дело «Мастер на два стола»: разветвлённая схема ремонта, общие сотрудники и итоговый отчёт" width="1440" height="810" fetchpriority="high"><span class="image-expand" aria-hidden="true">→</span></a>
+          <figcaption><span>Свободный стол ещё не значит,<br>что есть кому за ним работать.</span><span class="dossier-number" aria-hidden="true">01 / 03</span></figcaption>
+          <div class="dossier-footer"><span>Реальный скриншот игры</span><span>Нажмите, чтобы рассмотреть →</span></div>
+        </figure>
       </div>
-
-      <figure class="analyst-shot">
-        <a href="./screenshot-editor.webp" aria-label="Открыть скриншот редактора в полном размере">
-          <img src="./screenshot-editor.webp" alt="Схема ремонта техники и отчёт о проверке решения" width="1440" height="810" fetchpriority="high">
-        </a>
-        <figcaption>Дело «Мастер на два стола»</figcaption>
-      </figure>
+      <dl class="game-facts"><div><dt>Основная история</dt><dd><strong>45</strong> рабочих дел</dd></div><div><dt>Проверка устойчивости</dt><dd><strong>5</strong> особых поручений</dd></div><div><dt>Начать с нуля</dt><dd><strong>3</strong> учебных задания</dd></div><div><dt>Доступ</dt><dd class="fact-free">Бесплатно<span>Прямо в браузере</span></dd></div></dl>
     </section>
 
-    <section class="detail-body shell" aria-labelledby="how-to-play">
-      <div class="detail-grid">
-        <h2 class="analyst-section-title" id="how-to-play">Как играть</h2>
-        <div class="detail-copy">
-          <p class="lead">Прочитайте условия дела, разместите шаги на рабочем поле и соедините их в схему.</p>
-          <p>Начните с обучения, чтобы освоить редактор. Запустите расчёт и посмотрите в отчёте, сколько заказов выполнено и где возникли задержки. В особых поручениях одну схему нужно проверить сразу на нескольких сценариях.</p>
-          <figure class="analyst-shot analyst-case-shot">
-            <a href="./screenshot-campaign.webp" aria-label="Открыть скриншот испытания в полном размере">
-              <img src="./screenshot-campaign.webp" alt="Схема испытания с тремя сценариями и общим отчётом о приёмке" width="1440" height="810" loading="lazy">
-            </a>
-            <figcaption>Особое поручение «После шторма»</figcaption>
-          </figure>
+    <section class="how-section shell game-section" id="how-it-works" aria-labelledby="how-title">
+      <div class="game-section-heading"><p class="game-section-index">01 / Как играть</p><h2 id="how-title">От «вроде всё логично»<br>до «это работает».</h2><p>Здесь схема оживает: заказы проходят по маршрутам, ждут сотрудников и занимают место. Результат каждого решения виден в расчёте.</p></div>
+      <ol class="game-steps">
+        <li><span class="step-number">01</span><h3>Разберитесь в задаче</h3><p>Прочитайте дело: что нужно получить, какие операции обязательны, сколько есть времени и на что хватит бюджета.</p><span class="step-detail">Условия → ограничения</span></li>
+        <li><span class="step-number">02</span><h3>Соберите свою схему</h3><p>Расставьте рабочие блоки, соедините их и выберите маршруты. Решите, что можно делать параллельно, а что должно ждать.</p><span class="step-detail">Операции → связи</span></li>
+        <li><span class="step-number">03</span><h3>Проверьте на практике</h3><p>Запустите расчёт, проследите путь заказов и изучите отчёт. Найдите задержку, измените решение и сдайте работающий процесс.</p><span class="step-detail">Расчёт → улучшение</span></li>
+      </ol>
+    </section>
+
+    <section class="process-section shell game-section" aria-labelledby="process-title">
+      <div class="process-layout">
+        <div class="process-copy"><p class="game-section-index">02 / В чём головоломка</p><h2 id="process-title">Больше оборудования.<br><em>А быстрее не стало.</em></h2><p class="process-lead">Дело может быть в человеке, которого делят два поста. Или в партии, которая слишком долго собирается. Или в заказе, пришедшем под конец смены.</p><p>Придётся искать причину, а затем проверять догадку. Хорошее решение учитывает всю цепочку.</p></div>
+        <div class="process-paper">
+          <div class="paper-heading"><span>Принцип игры</span><span>Ресурс / человек</span></div>
+          <svg class="resource-diagram" viewBox="0 0 540 240" role="img" aria-labelledby="resource-title resource-desc"><title id="resource-title">Два рабочих поста делят одного мастера</title><desc id="resource-desc">Мастер связан с постом ремонта и постом контроля. Пока он ремонтирует, контроль ждёт.</desc>
+            <path class="resource-line" d="M270 84V111H136V139M270 111H404V139"/>
+            <rect x="168" y="28" width="204" height="56" rx="28" class="resource-person"/><circle cx="195" cy="50" r="6" class="person-symbol"/><path d="M185 68q10-19 20 0" class="person-symbol"/><text x="223" y="62" class="person-label">Один мастер</text>
+            <rect x="36" y="139" width="200" height="65" rx="3" class="resource-working"/><rect x="304" y="139" width="200" height="65" rx="3" class="resource-waiting"/>
+            <circle cx="58" cy="162" r="4" class="working-dot"/><text x="73" y="167" class="station-label">Ремонт</text><text x="56" y="189" class="station-state">мастер занят здесь</text>
+            <circle cx="326" cy="162" r="4" class="waiting-dot"/><text x="341" y="167" class="station-label">Контроль</text><text x="324" y="189" class="station-state">пост свободен, но ждёт</text>
+          </svg>
+          <p class="paper-takeaway">Два поста ≠ два сотрудника</p><p class="paper-note">Упрощённый пример общего ресурса. В игре такие зависимости влияют на очереди и сроки.</p>
         </div>
       </div>
+      <div class="mechanic-notes"><div><span>Время</span><h3>Обещания имеют срок</h3><p>Новые заказы приходят в течение смены. Быстрый процесс в среднем ещё может опоздать с конкретным заказом.</p></div><div><span>Место и деньги</span><h3>Запас не бесконечен</h3><p>Очереди занимают место, оборудование стоит денег. Придётся выбирать, какое улучшение действительно нужно.</p></div><div><span>Нагрузка</span><h3>Один план. Разные дни.</h3><p>В особых поручениях одна схема проходит несколько сценариев. Решение должно работать в каждом из них.</p></div></div>
     </section>
+
+    <section class="field-section shell game-section" aria-labelledby="field-title">
+      <div class="field-heading"><div><p class="game-section-index">03 / Внутри игры</p><h2 id="field-title">Вся система<br>перед глазами.</h2></div><p>Слева — доступные операции. В центре — ваш процесс. Справа — условия и отчёт. Можно проследить движение заказов и увидеть, где они ждут.</p></div>
+      <figure class="field-figure"><a class="game-image-link" href="./screenshot-campaign.webp" data-lightbox aria-label="Увеличить скриншот особого поручения «После шторма»"><img src="./screenshot-campaign.webp" alt="Особое поручение «После шторма»: схема склада и отчёт о прохождении трёх сценариев" width="1440" height="810" loading="lazy"><span class="image-expand" aria-hidden="true">→</span></a><figcaption><span><b>«После шторма»</b> · Особое поручение</span><span>Одна схема · Три сценария · Общая приёмка</span></figcaption></figure>
+    </section>
+
+    <section class="campaign-section shell game-section" aria-labelledby="campaign-title"><div class="campaign-intro"><p class="game-section-index">04 / От первого маршрута до целой системы</p><h2 id="campaign-title">Сначала — разобраться.<br>Потом — отвечать за всё.</h2><p>Мастерская, пекарня, типография, склад и музей. Вместе с новыми делами появляются новые зависимости, а привычные решения проходят проверку в изменившихся условиях.</p></div>
+      <ol class="campaign-path"><li><span class="path-count">3 задания</span><h3>Вводный курс</h3><p>Маршруты, условия и параллельная работа. Редактор осваивается прямо в деле.</p></li><li><span class="path-count">45 дел · 12 глав</span><h3>Основная история</h3><p>От небольшого участка до общей работы филиалов и подготовки музея к открытию.</p></li><li><span class="path-count">5 испытаний</span><h3>Особые поручения</h3><p>Проверки устойчивости, которые постепенно открываются после основной истории.</p></li></ol>
+    </section>
+
+    <section class="faq-section shell game-section" id="questions" aria-labelledby="faq-title"><div><p class="game-section-index">05 / Перед началом</p><h2 id="faq-title">Пара рабочих<br>вопросов.</h2></div><div class="faq-list">
+      <details open><summary>Нужно разбираться в аналитике или BPMN?</summary><p>Нет. Начните с трёх учебных заданий: они знакомят с маршрутами, условиями и параллельной работой. Игра использует понятные рабочие блоки. Знать формальную нотацию заранее не требуется.</p></details>
+      <details><summary>Игра бесплатная? Нужна регистрация?</summary><p>Да, вся опубликованная версия доступна бесплатно. Ничего устанавливать и создавать аккаунт не нужно. Кнопка «Играть» сразу открывает игру в браузере.</p></details>
+      <details><summary>Сохранится ли мой прогресс?</summary><p>Прогресс сохраняется автоматически в этом браузере на этом устройстве. Вернитесь по той же ссылке в том же браузере. Синхронизации между устройствами нет. Очистка данных сайта или завершение приватного сеанса может удалить сохранение.</p></details>
+      <details><summary>Можно играть с телефона?</summary><p>Для работы со схемами лучше использовать компьютер или ноутбук с широким экраном и мышью. На телефоне можно познакомиться с игрой, но её рабочее поле рассчитано на большой экран.</p></details>
+      <details><summary>Нужно спешить во время игры?</summary><p>Минуты в отчёте — расчётное время внутри процесса. Они не измеряют, как долго вы думаете над решением. Схему можно спокойно изучать и переделывать.</p></details>
+      <details><summary>Кто сделал игру и куда написать об ошибке?</summary><p>Автор — <a href="/timur-makhmutov/">Тимур Махмутов</a>. Если что-то не работает, напишите <a href="https://t.me/Mkh_tz" target="_blank" rel="noopener noreferrer">в Telegram →</a>. Укажите название дела, что произошло и какой браузер используете. Скриншот поможет разобраться.</p></details>
+    </div></section>
+
+    <section class="start-section shell" aria-labelledby="start-title"><div class="start-inner"><div><p class="game-eyebrow">Ваше первое дело уже ждёт</p><h2 id="start-title">Посмотрим,<br>где всё тормозит?</h2></div><div class="start-action"><a class="game-button" href="./play/"><span aria-hidden="true">▷</span> Начать игру <span aria-hidden="true">→</span></a><p>Бесплатно · Без регистрации<br>Прогресс остаётся в этом браузере</p></div></div></section>
   </main>
-
-  <footer class="footer shell">
-    <div><a class="wordmark footer-mark" href="/">MAKHMUTOV</a><p>Тимур Махмутов · игры</p></div>
-    <div class="footer-links"><a href="/">Главная</a><a href="/timur-makhmutov/">Автор</a><a href="/#works">Проекты</a></div>
-    <div class="copyright">© 2026 MAKHMUTOV</div>
-  </footer>
-  <script src="/script.js"></script>
+  <footer class="footer shell"><div><a class="wordmark footer-mark" href="/">MAKHMUTOV</a><p>Тимур Махмутов · игры</p></div><div class="footer-links"><a href="/">Главная</a><a href="/timur-makhmutov/">Автор</a><a href="/#works">Все проекты</a></div><div class="copyright">© 2026 MAKHMUTOV</div></footer>
+  <dialog class="image-dialog" aria-label="Скриншот игры в полном размере"><button class="dialog-close" type="button" aria-label="Закрыть скриншот">Закрыть <span aria-hidden="true">×</span></button><img alt=""><p>Прокрутите изображение, чтобы рассмотреть детали.</p></dialog>
+  <script src="/script.js?v=20261117"></script>
+  <script src="./page.js?v=20261117"></script>
 </body>
 </html>

@@ -60,8 +60,18 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
   });
 });
 
-// Clean up old bookmarked/hash URLs and make a reload return to the page start.
+// Follow cross-page section links, then keep the public URL clean.
 if (window.location.hash) {
+  let sectionId;
+  try { sectionId = decodeURIComponent(window.location.hash.slice(1)); } catch (_) {}
+  const target = sectionId ? document.getElementById(sectionId) : null;
   history.replaceState(null, '', window.location.pathname + window.location.search);
-  window.scrollTo(0, 0);
+  if (target) {
+    const scrollToSection = () => {
+      const headerOffset = document.querySelector('.topbar')?.offsetHeight ?? 0;
+      window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - headerOffset, behavior: 'instant' });
+    };
+    if (document.readyState === 'complete') scrollToSection();
+    else window.addEventListener('load', scrollToSection, { once: true });
+  }
 }
