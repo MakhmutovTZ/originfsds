@@ -240,7 +240,8 @@ a{color:inherit}
 #works .featured-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:1fr}
 #works .feature-channel{grid-column:auto;display:flex}
 #works .feature-channel .channel-visual{aspect-ratio:1/1;min-height:0;border-right:0;border-bottom:1px solid var(--line)}
-.game-cover{display:block;text-decoration:none}
+.game-cover{display:grid;place-items:center;padding:clamp(18px,3vw,40px);text-decoration:none}
+.game-cover img{height:auto;object-fit:contain}
 .game-cover:focus-visible{outline:3px solid var(--paper);outline-offset:-5px}
 .future-grid-pair{grid-template-columns:repeat(2,minmax(0,1fr))}
 .future-grid-pair .future-card{min-height:135px}
