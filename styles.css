@@ -272,6 +272,5 @@ a{color:inherit}
 .external-arrow{width:12px;height:12px;fill:none;stroke:currentColor;stroke-width:1.5;flex-shrink:0;display:inline-block;vertical-align:middle}
 
 .book-covers .category-cover{width:51%;aspect-ratio:904/1280}
-.book-covers .category-cover img{object-fit:contain;background:#080909}
-.book-covers .category-cover:first-child{left:8%;top:8%}
+.book-covers .category-cover:first-child{left:8%;top:8%;width:48%;aspect-ratio:2/3}
 .book-covers .category-cover:nth-child(2){right:8%;bottom:7%}
