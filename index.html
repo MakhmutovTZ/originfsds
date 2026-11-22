@@ -27,7 +27,7 @@
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" as="image" href="assets/portrait.webp" fetchpriority="high">
-  <link rel="stylesheet" href="styles.css?v=20261117-r4">
+  <link rel="stylesheet" href="styles.css?v=20261122">
 
   <script type="application/ld+json">
   {
@@ -71,6 +71,7 @@
     <nav id="nav" class="nav" aria-label="Основная навигация">
       <a href="#works">Проекты</a>
       <a href="/music/">Музыка</a>
+      <a href="/books/">Книги</a>
       <a href="#about">О проекте</a>
       <a href="/timur-makhmutov/">Автор</a>
       <a href="https://t.me/aikillart" target="_blank" rel="noopener noreferrer">Канал</a>
@@ -113,14 +114,14 @@
       </div>
 
       <div class="featured-grid">
-        <a class="feature-card feature-music music-category-card" href="/music/" aria-label="Музыка MAKHMUTOV — открыть все релизы">
+        <a class="feature-card feature-music category-card" href="/music/" aria-label="Музыка MAKHMUTOV — открыть все релизы">
           <div class="feature-index">01</div>
-          <div class="music-covers" aria-label="Обложки музыкальных релизов MAKHMUTOV">
-            <figure class="music-cover">
+          <div class="category-covers" aria-label="Обложки музыкальных релизов MAKHMUTOV">
+            <figure class="category-cover">
               <img src="assets/nemnogo-very.webp" alt="Обложка сингла «Немного веры»" loading="lazy">
               <figcaption>Немного веры</figcaption>
             </figure>
-            <figure class="music-cover">
+            <figure class="category-cover">
               <img src="assets/lyubov-v-stile-tennis.webp" alt="Обложка сингла «Любовь в стиле Tennis»" width="1600" height="1600" loading="lazy">
               <figcaption>Любовь в стиле Tennis</figcaption>
             </figure>
@@ -135,21 +136,25 @@
           </div>
         </a>
 
-        <article class="feature-card feature-book">
+        <a class="feature-card category-card" href="/books/" aria-label="Книги MAKHMUTOV — открыть все книги">
           <div class="feature-index">02</div>
-          <div class="feature-media book-media">
-            <img src="assets/dead-client-girls.webp" alt="Обложка романа «Девушки моего мёртвого клиента»" loading="lazy">
+          <div class="category-covers book-covers">
+            <figure class="category-cover">
+              <img src="/assets/dead-client-girls.webp" alt="Обложка романа «Девушки моего мёртвого клиента»" loading="lazy">
+            </figure>
+            <figure class="category-cover">
+              <img src="/assets/tennis-novel-cover.jpg" alt="Обложка романа «Любовь в стиле Tennis»" width="904" height="1280" loading="lazy">
+            </figure>
           </div>
           <div class="feature-body">
-            <p class="project-type">Книги · Роман</p>
-            <h3>Девушки моего мёртвого клиента</h3>
-            <p>Проводник посмертных воспоминаний передаёт трём женщинам память мужчины, который их любил, и в чужих историях всё отчётливее узнаёт собственную вину</p>
+            <p class="project-type">2 романа</p>
+            <h3>Книги</h3>
+            <p>Романы Тимура Махмутова</p>
             <div class="feature-actions">
-              <a class="btn" href="/books/devushki-moego-mertvogo-klienta/">О романе <span aria-hidden="true">→</span></a>
-              <a class="text-link card-secondary-link" href="https://www.litres.ru/book/makhmutov-34075907/devushki-moego-miortvogo-klienta-74494457/" target="_blank" rel="noopener noreferrer">Читать на ЛитРес ↗</a>
+              <span class="btn feature-card-cta">Все книги <span aria-hidden="true">→</span></span>
             </div>
           </div>
-        </article>
+        </a>
 
         <article id="channel" class="feature-card feature-channel">
           <div class="feature-index">03</div>

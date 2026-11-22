@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://makhmutov.site/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-22</lastmod>
   </url>
   <url>
     <loc>https://makhmutov.site/timur-makhmutov/</loc>
@@ -10,7 +10,7 @@
   </url>
   <url>
     <loc>https://makhmutov.site/music/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-22</lastmod>
   </url>
   <url>
     <loc>https://makhmutov.site/music/lyubov-v-stile-tennis/</loc>
@@ -25,8 +25,16 @@
     <lastmod>2026-10-01</lastmod>
   </url>
   <url>
+    <loc>https://makhmutov.site/books/</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://makhmutov.site/books/lyubov-v-stile-tennis/</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
     <loc>https://makhmutov.site/books/devushki-moego-mertvogo-klienta/</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-11-22</lastmod>
   </url>
   <url>
     <loc>https://makhmutov.site/projects/ii-ubivaet-iskusstvo/</loc>
